@@ -1,0 +1,111 @@
+.SUPContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content:center ;
+    align-items:center ;
+    /* background-color: blue; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0 ,0, 0,0.5);
+}
+
+.SUPContainer1 {
+    height: 95vh;
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    /* left: 60%; */
+    background-color:white;
+    border-radius: 10px;
+    margin-top: 3vh;
+}
+.X{
+   display: flex;
+   position: relative;
+   right: 40%;
+   cursor: default;
+    /* border: 1px solid black; */
+    /* background-color: blue; */
+    width: 10%;
+    font-size: large;
+    font-weight: bold;
+}
+#image{
+    width: 70%;
+}
+.SUPContainer2{
+    height: 100%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background-color: orange; */
+}
+.SUPC{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    font-size: xx-large;
+    font-weight: bold;
+    /* border: 1px solid red; */
+}
+.SUPData{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* border: 1px solid green; */
+}
+.SUPdob{
+    display: flex;
+    font-size: large;
+    font-weight: bold;
+}
+.SUPText{
+    /* display: flex; */
+    width: 100%;
+    /* border: 1px solid black; */
+    /* justify-content: left; */
+}
+#SUPText{
+    text-align: left;
+}
+#linktext{
+    text-align: right;
+}
+.SUPSelect{
+    display: flex;
+    /* border: 1px solid black;     */
+    /* justify-content: space-between; */
+    width: 100%;
+}
+.SUPMonth{
+    width: 50%;
+}
+
+.SUPDay{
+    width: 20%;
+}
+.SUPYear{
+    width: 25%;
+}
+.SUPN{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    font-size: large;
+    font-weight: bold;
+    justify-content: center;align-items: center;
+    border-radius: 30px;
+    border: 1px solid gray;
+    background-color: gray;
+    color: white;
+
+}

@@ -1,0 +1,141 @@
+.MPContainer {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.MPContainer1 {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MPContainer2 {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.MPText {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+
+}
+
+.happening {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 10vh;
+    font-weight: bolder;
+}
+
+.join {
+    height: 30%;
+    width: 100%;
+    font-size: 5vh;
+    font-weight: bolder;
+    display: flex;
+    justify-content: left;
+}
+
+.MPData {
+    height: 35%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+
+}
+
+.MPData1 {
+    display: flex;
+    justify-content: left;
+    height: 20%;
+    width: 50%;
+    align-items: center;
+    position: relative;
+
+}
+
+.MPOR {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+#MPgoogle {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid gray;
+
+}
+
+#MPApple {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid gray;
+}
+
+#MPCrtAcc {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #1a8cd8;
+    border: 1px solid gray;
+    color: aliceblue;
+
+}
+
+.MPData2 {
+    display: flex;
+    justify-content: left;
+    height: 20%;
+    width: 50%;
+    font-size: small;
+}
+
+.MPsignin {
+    height: 13%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.MPal {
+    display: flex;
+    font-size: large;
+    font-weight: bold;
+}
+
+.MPData3 {
+    display: flex;
+    justify-content: left;
+    height: 50%;
+    width: 50%;
+    font-size: small;
+
+}
+
+#MPSignin {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: white;
+    color: #1a8cd8;
+    border: 1px solid gray
+}

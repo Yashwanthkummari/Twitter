@@ -5,9 +5,67 @@ import imageGoogle from '../../images/google.jpeg'
 import imageApple from '../../images/apple.jpeg'
 import TextField from '@mui/material/TextField';
 import { Link } from "@mui/material";
+import { useState } from "react";
 
 
 function SignIn({ creSignin }) {
+
+    const [inputData, setInputdata] = useState({
+        email: "",
+        password: ""
+    })
+    
+    const handleEmail = (eml) => {
+        setInputdata({ ...inputData,email: eml.target.value })
+    }
+    const handlePassword = (pass) => {
+        setInputdata({ ...inputData, password: pass.target.value })
+    }
+    
+    const [errors, setErrors] = useState({
+        emailError: false,
+        emailHelper: "",
+        passwordError: false,
+        passworHelper: ""
+    })
+    const emailRegex = /^[a-z]{3,}(.[0-9a-z]*)?@([a-z]){2,}.[a-z]+(.in)*$/;
+    const passwordRegex = /^.*(?=.{8,})(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&+=]).*$/;
+
+    const handleSignin = () => {
+        let emailCheck= emailRegex.test(inputData.email)
+        let passwordCheck=passwordRegex.test(inputData.password)
+
+        if (emailCheck==false){
+            setErrors((prev)=>({
+                ...prev,
+                emailError:true,
+                emailHelper:"enter correct email"
+
+            }))
+        }
+        else{
+            setErrors((prev)=>({
+                ...prev,
+                emailError:false,
+                emailHelper:""
+            }))
+        }
+        if(passwordCheck==false){
+            setErrors((prev)=>({
+                ...prev,
+                passwordError:true,
+                passworHelper:"enter correct password"
+            }))
+        }else{
+            setErrors((prev)=>({
+                ...prev,
+                passwordError:false,
+                passworHelper:""
+            }))
+        }
+        console.log(inputData)
+    }
+
     return (
         <div className="SIPContainer">
             <div className="SIPContainer1">
@@ -29,12 +87,12 @@ function SignIn({ creSignin }) {
                         <div className="SIPOR">
                             <span className="SIPhr"><hr /></span><span className="SIPor1">or</span><span className="SIPhr"> <hr /></span>
                         </div>
-                        <div className="SIPphemun">
-                            <TextField id="filled-basic" label="Email" variant="filled" fullWidth />
-                            <TextField id="filled-basic" label="Password" variant="filled" fullWidth />
+                        <div className="SIPEmail">
+                            <TextField id="filled-basic" label="Email" variant="filled" fullWidth  onChange={handleEmail} error={errors.emailError} helperText={errors.emailHelper} />
+                            <TextField id="filled-basic" label="Password" variant="filled" fullWidth  onChange={handlePassword} error={errors.passwordError} helperText={errors.passworHelper}/>
 
                         </div>
-                        <div className="SIPnext" >
+                        <div className="SIPnext"  onClick={handleSignin}>
                             <div className="SIPn" >Next/SignIn</div>
                         </div>
                         <div className="SIPfpass">

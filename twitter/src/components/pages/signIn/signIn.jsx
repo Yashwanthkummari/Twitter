@@ -6,9 +6,12 @@ import imageApple from '../../images/apple.jpeg'
 import TextField from '@mui/material/TextField';
 import { Link } from "@mui/material";
 import { useState } from "react";
+import { signin } from "../../services/userServices";
+import { useNavigate } from "react-router-dom";
 
 
 function SignIn({ creSignin }) {
+    const navigate = useNavigate()
 
     const [inputData, setInputdata] = useState({
         email: "",
@@ -31,7 +34,7 @@ function SignIn({ creSignin }) {
     const emailRegex = /^[a-z]{3,}(.[0-9a-z]*)?@([a-z]){2,}.[a-z]+(.in)*$/;
     const passwordRegex = /^.*(?=.{8,})(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&+=]).*$/;
 
-    const handleSignin = () => {
+    const handleSignin = async () => {
         let emailCheck= emailRegex.test(inputData.email)
         let passwordCheck=passwordRegex.test(inputData.password)
 
@@ -64,6 +67,14 @@ function SignIn({ creSignin }) {
             }))
         }
         console.log(inputData)
+        if(emailCheck === true && passwordCheck === true)
+        {
+           let response  = await  signin(inputData);
+           console.log(response);
+           localStorage.setItem("token", response.data.data);
+           navigate("/drawer")
+
+        }
     }
 
     return (

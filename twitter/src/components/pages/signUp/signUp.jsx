@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import './signUp.css';
 import TextField from '@mui/material/TextField';
-import { Link } from "@mui/material";
+import { signup } from "../../services/userServices";
+// import { Link } from "@mui/material";
 
 function SignUp({ creSignup }) {
     const [userData, setuserdata] = useState({
@@ -9,7 +10,7 @@ function SignUp({ creSignup }) {
         Email: "",
         Password: "",
         ConfirmPassword: "",
-        DateOfBirth: ""
+        // DateOfBirth: ""
     })
     console.log(userData)
     const name = (nam) => {
@@ -42,11 +43,11 @@ function SignUp({ creSignup }) {
     const nameRegex = /^[a-zA-Z ]{2,30}$/;
     const emailRegex = /^[a-z]{3,}(.[0-9a-z]*)?@([a-z]){2,}.[a-z]+(.in)*$/;
     const passwordRegex = /^.*(?=.{8,})(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&+=]).*$/;
-    const dateOfbirthregex = /^ [0-9]{2}-[0-9]{2}-[0-9]{4}$/;
+    const dateOfbirthregex = /^ [0-9]{4}-[0-9]{2}-[0-9]{2}$/;
 
 
 
-    const signup = () => {
+    const handleSignup = async () => {
         let nameCheck = nameRegex.test(userData.Name)
         let emailcheck = emailRegex.test(userData.Email)
         let passwordCheck = passwordRegex.test(userData.Password)
@@ -112,7 +113,11 @@ function SignUp({ creSignup }) {
             }))
         }
         
-
+        if (nameCheck === true && emailcheck === true && passwordCheck === true ) {
+            let response = await signup(userData);
+            console.log(response);
+            localStorage.setItem("token", response.data.data.userId);
+        }
     }
 
 
@@ -134,12 +139,12 @@ function SignUp({ creSignup }) {
                         <div className="SUPdob">Date Of birth</div>
                         <div className="SUPText" id="SUPText">This will not shown publicly.Confirm your age,even if this accounts is for busines,a pet ,or something else</div>
                         <div className="SUPSelect">
-                            <TextField id="outlined-basic" label="dd-mm-yyyy" variant="outlined" fullWidth onChange={dob} error={error.dobError} helperText={error.dobHelper} />
+                            <TextField id="outlined-basic" label="yyyy-dd-mm" variant="outlined" fullWidth onChange={dob} error={error.dobError} helperText={error.dobHelper} />
 
                         </div>
 
                     </div>
-                    <div className="SUPN" onClick={signup}>
+                    <div className="SUPN" onClick={handleSignup}>
                         Next
                     </div>
                 </div>

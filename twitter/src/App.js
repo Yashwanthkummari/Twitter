@@ -3,6 +3,12 @@ import './App.css';
 import MainPage from './components/pages/mainPage/mainpage';
 import SignIn from './components/pages/signIn/signIn';
 import SignUp from './components/pages/signUp/signUp';
+import Drawer from './components/dashBoard/drawer/drawer';
+import Home from './components/dashBoard/home/home';
+import Router from './components/router/router';
+
+
+
 
 
 function App() {
@@ -22,9 +28,13 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <MainPage/>
+      {/* <MainPage/> */}
       {/* <SignIn/> */}
       {/* <SignUp/> */}
+      {/* <Drawer/> */}
+      {/* <Home/> */}
+      <Router/>
+    
     </div>
   );
 }

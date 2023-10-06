@@ -104,7 +104,7 @@ function SignIn({ creSignin }) {
 
                         </div>
                         <div className="SIPnext"  onClick={handleSignin}>
-                            <div className="SIPn" >Next/SignIn</div>
+                            <div className="SIPn" >SignIn</div>
                         </div>
                         <div className="SIPfpass">
                             <div className="SIPn"> <Link id="SIPfpass"> forgetpassword?</Link></div>

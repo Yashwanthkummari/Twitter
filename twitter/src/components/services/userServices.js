@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const signup = async (obj) =>{
     let response = await axios.post(
-        "https://localhost:44362/api/User/Register",
+        "https://localhost:44323/api/User/Register",
         obj
     );
     return response;
@@ -11,7 +11,7 @@ export const signup = async (obj) =>{
 
 export const signin =  async(obj) => {
     let response = await axios.post(
-        "https://localhost:44362/api/User/Login",
+        "https://localhost:44323/api/User/Login",
         obj
     );
     return response;

@@ -1,0 +1,148 @@
+.DBContainer {
+    height: 100vh;
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+}
+
+.DBContainer1 {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+
+.DBContainer2 {
+    height: 100%;
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: yellow; */
+     position: fixed;
+    /* top: 0%; */ 
+    /* border: 1px solid black; */
+}
+
+.DBContainer5 {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid brown; */
+}
+
+.DBTwitterXlogo {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid blue; */
+}
+
+#DBTwitterXlogo {
+    width: 14%;
+    height: 60%;
+}
+
+.DBIcons {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    /* border: 1px solid pink; */
+}
+
+.DBIcons1 {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    /* font-size: large; */
+    /* font-weight: bold; */
+    /* border: 1px solid green; */
+}
+
+#twitterlogo {
+    height: 40%;
+}
+
+.DBPost {
+    height: 10%;
+    width: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(54, 161, 233);
+    border-radius: 30px;
+    color: white;
+}
+.DBContainer6{
+    height: 10%;
+    width: 15%;
+    /* border: 1px solid blue; */
+    background-color: #e9e7e3;  
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position:absolute;
+     top: 79%;
+}
+.DBAcc{
+    height: 30%;
+}
+.DBLOGOUT{
+    /* border: 1px solid black; */
+    height: 30%;
+}
+.DBProfile {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    /* border: 1px solid black; */
+    position: relative;
+    top: 6%;
+    cursor: pointer;
+}
+
+.DBProfile1 {
+    display: flex;
+    gap: 3%;
+}
+
+.DBContainer3 {
+    height: 100vh;
+    width: 51%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    position: relative;
+    left: 20.3%;
+
+    
+    /* background-color: green; */
+}
+
+
+.DBContainer4 {
+    height: 100%;
+    width: 23%;
+    display: flex;
+    /* background-color: gray; */
+    position: fixed;
+    right: 6%;
+}
+
+
+

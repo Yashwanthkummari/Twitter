@@ -1,0 +1,265 @@
+.EContainer{
+    width: 45vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    /* background-color: red; */
+}
+.EContainer::-webkit-scrollbar{
+    width: 0%;
+}
+
+.EContainer1{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    background-color: #fff;
+    /* border: 5px soild pink; */
+    /* background-color: palevioletred; */
+}
+.ESElect{
+    height: 100%;
+    width: 95%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Eselect1{
+    height: 45%;
+    width: 100%;
+    /* border: 1px solid hotpink; */
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 2%;
+
+}
+.ESearchIcon{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    /* border: 1px solid green; */
+    background-color: #e9e7e3;
+   
+}
+.ESearchIcon1{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+.ESettingsIcon{
+    height: 100%;
+    width: 5%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.EISelect{
+    height: 45%;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 10%;
+}
+.EISElectH:hover{
+    
+    background-color: #e9e7e3;
+
+}
+.Ehr{
+    width: 100%;
+    /* border: 1px solid black; */
+    /* position: relative;
+    bottom: 5%; */
+}
+
+.EContainer2{
+    width: 100%;
+    height: 40%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.ETrend{
+    width: 100%;
+    height: 40%;
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.ETrend1{
+    width: 98%;
+    height: 20%;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+}
+.Etrend2{
+    width: 97%;
+    height: 80%;
+    /* border: 1px solid red; */
+}
+.Etrendb{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(3, 3, 41);
+}
+.Etrendbb{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(3, 3, 94);
+}
+.Etrendb1{
+    height: 100%;
+    width: 98%;
+    display: flex;
+    /* border: 1px solid white; */
+    justify-content: space-between;
+}
+.Etrendb2{
+    height: 100%;
+    width: 35%;
+    /* border: 1px solid yellow; */
+    display: flex;
+    /* justify-content: center; */
+}
+.ETrendimg{
+    height: 100%;
+    width: 32%;
+    /* border: 1px solid pink; */
+}
+#cricketlogo{
+    width: 100%;
+    height: 97%;
+}
+#cricketlogo1{
+    width: 100%;
+    height: 97%;
+}
+.ETEamName{
+    height: 100%;
+    width: 70%;
+    /* border: 1px solid pink; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+
+}
+.ETEamScore{
+    height: 100%;
+    width: 10%;
+    color: white;
+    display: flex;
+    /* border: 1px solid pink; */
+    font-weight: bold;
+
+    justify-content: center;
+    align-items: center;
+}
+.EtrendI{
+    width: 97%;
+    height: 25%;
+    /* border: 1px solid black; */
+}
+.ETend1{
+    height: 33%;
+    display: flex;
+    font-size: smaller;
+    justify-content: space-between;
+    
+}
+.ETItleNm{
+    color: rgb(182, 175, 175);
+}
+.ETrendTitle{
+    height: 40%;
+    font-weight: bold;
+    display: flex;
+}
+.ETrendpostsN{
+    height: 27%;
+    display: flex;
+    font-size: smaller;
+
+}
+.EContainer3{
+    width: 100%;
+    height:30% ;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.EVedio{
+    width: 100%;
+    height: 20%;
+    /* border: 1px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Evediotext{
+    width: 97%;
+    height: 40%;
+    /* border: 1px solid blueviolet; */
+    font-weight: bold;
+display: flex;
+}
+.Evediotext1{
+    width: 50%;
+    width: 97%;
+    /* border: 1px solid white; */
+    font-size: small;
+    display: flex;
+    color: rgb(182, 175, 175);
+}
+.EVedios{
+    width: 100%;
+    height: 78%;
+    /* border: 1px solid brown; */
+    display: flex;
+    justify-content: space-around;
+}
+.EVEdioss{
+    width: 30%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+#EvediosImage{
+width: 100%;
+height: 97%;
+}
+.EContainer4{
+    width: 100%;
+    /* height: 10%; */
+    /* border: 1px solid blue; */
+    /* background-color: blue; */
+}

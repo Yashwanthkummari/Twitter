@@ -1,6 +1,6 @@
 import React from "react";
 import './feed.css'
-import  cricketImage from "../../images/cricket.jpeg" 
+import cricketImage from "../../images/cricket.jpeg"
 import SearchIcon from '@mui/icons-material/Search';
 import MoreHorizOutlinedIcon from '@mui/icons-material/MoreHorizOutlined';
 
@@ -29,7 +29,7 @@ function Feed() {
                             <div className="FLTitle"> Sports</div>
                         </div>
                         <div className="FPic1">
-                            <img  id="cricketimg" src= {cricketImage} alt=" cricket image" />
+                            <img id="cricketimg" src={cricketImage} alt=" cricket image" />
                         </div>
                     </div>
                     <div className="FTrend">
@@ -37,11 +37,11 @@ function Feed() {
                             <div><span className="FTItleNm"> Trending </span> </div>
                             <div><MoreHorizOutlinedIcon /></div>
                         </div>
-                        <div className="FTrendTitle"><span id="FTItleNm">Yashwanth</span></div>
+                        <div className="FTrendTitle"><span id="FTItleNm">ERRIHOOKMODEL</span></div>
                         <div className="FTrendpostsN"><span className="FTItleNm">1.27kposts</span></div>
                     </div>
                     <div className="FtrendI">
-                    <div className="FTend1">
+                        <div className="FTend1">
                             <div><span className="FTItleNm"> Trending in India </span> </div>
                             <div><MoreHorizOutlinedIcon /></div>
                         </div>
@@ -49,15 +49,15 @@ function Feed() {
                         <div className="FTrendpostsN"><span className="FTItleNm">1.27kposts</span></div>
                     </div>
                     <div className="FTrendE">
-                    <div className="FTend1">
+                        <div className="FTend1">
                             <div><span className="FTItleNm"> Entertainment -Trending </span> </div>
                             <div><MoreHorizOutlinedIcon /></div>
                         </div>
-                        <div className="FTrendTitle"><span id="FTItleNm">#Yashwanth</span></div>
-                        <div className="FTrendpostsN"><span className="FTItleNm">1.27kposts</span></div>
+                        <div className="FTrendTitle"><span id="FTItleNm">#SaiPavanGanesh</span></div>
+                        <div className="FTrendpostsN"><span className="FTItleNm">1.57kposts</span></div>
                     </div>
                     <div className="FTrendE2">
-                    <div className="FTend1">
+                        <div className="FTend1">
                             <div><span className="FTItleNm"> Entertainment- Trending </span> </div>
                             <div><MoreHorizOutlinedIcon /></div>
                         </div>

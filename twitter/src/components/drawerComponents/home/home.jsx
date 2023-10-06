@@ -4,7 +4,13 @@ import { Avatar } from "@mui/material";
 import InsertPhotoOutlinedIcon from '@mui/icons-material/InsertPhotoOutlined';
 import GifBoxOutlinedIcon from '@mui/icons-material/GifBoxOutlined';
 import RoomOutlinedIcon from '@mui/icons-material/RoomOutlined';
-import ramaImage from '../../images/lordRam.jpeg'
+import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutlineOutlined';
+import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
+import FileUploadOutlinedIcon from '@mui/icons-material/FileUploadOutlined';
+import PollOutlinedIcon from '@mui/icons-material/PollOutlined';
+import RepeatOutlinedIcon from '@mui/icons-material/RepeatOutlined';
+import ramaImage from '../../images/lordRam.jpeg';
+import ram from '../../images/ram.jpeg'
 import MoreHorizOutlinedIcon from '@mui/icons-material/MoreHorizOutlined';
 import BallotOutlinedIcon from '@mui/icons-material/BallotOutlined';
 import SentimentSatisfiedAltIcon from '@mui/icons-material/SentimentSatisfiedAlt';
@@ -20,10 +26,10 @@ function Home() {
                     <div className="HForyou">For You</div>
                     <div className="HFollow">Following</div>
                 </div>
-               
+
 
             </div>
-            <span><hr /></span>
+            <span ><hr /></span>
             <div className="HHappening">
                 <div className="HAvatar">
                     <div><Avatar>YK</Avatar></div>
@@ -31,14 +37,14 @@ function Home() {
                         <div>What is Happening?!</div>
                     </div>
                 </div>
-                
+
                 <div className="HIcons">
                     <div className="HIcons1">
                         <InsertPhotoOutlinedIcon />
                         <GifBoxOutlinedIcon />
-                        <BallotOutlinedIcon/>
-                        <SentimentSatisfiedAltIcon/>
-                        <CalendarTodayIcon/>
+                        <BallotOutlinedIcon />
+                        <SentimentSatisfiedAltIcon />
+                        <CalendarTodayIcon />
                         <RoomOutlinedIcon />
                     </div>
                     <div
@@ -56,15 +62,28 @@ function Home() {
                             <div className="HUYK">@Yashwanth_Kummari</div>
                         </div>
                         <div>oct 2</div>
-                        <div className="HMoreHorIcon"><MoreHorizOutlinedIcon/></div>
+                        <div className="HMoreHorIcon"><MoreHorizOutlinedIcon /></div>
                     </div>
                     <div className="HJSR">Jai Sri Ram <span className="HYSRJAI">#jai sri ram</span></div>
                     <div className="HImage">
                         <img id="rama" src={ramaImage} alt="ramImage" />
                     </div>
-                </div>
-            </div>
+                    <div className="HLikeShareSub">
+                        <div><ChatBubbleOutlineOutlinedIcon /></div>
+                        <div><RepeatOutlinedIcon/></div>
+                        <div><FavoriteBorderOutlinedIcon/></div>
+                        <div><PollOutlinedIcon/></div>
+                        <div><FileUploadOutlinedIcon/></div>
+                    </div>
 
+
+                </div>
+                
+
+                
+            </div>
+           
+            
         </div>
     )
 }

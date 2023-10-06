@@ -1,10 +1,16 @@
 .HContainer{
-    width: 40.7vw;
+    width:45vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow: auto;
     /* background-color: red; */
 }
+.HContainer::-webkit-scrollbar{
+    width: 0%;
+
+}
+
 .HHom{
     width: 100%;
     height: 15%;
@@ -12,6 +18,10 @@
     flex-direction: column;
     justify-content: space-around;
     /* background-color: orange; */
+    position: sticky;
+    /* background-color: #fff; */
+    top: 0;
+    z-index: 100;
 }
 .HHome{
     width: 12%;
@@ -39,6 +49,7 @@
     height: 30%;
     /* border: 1px solid white; */
 }
+
 .HHappening{
     width: 100%;
     height: 18%;
@@ -174,6 +185,14 @@ gap: 2%;
     height: 75%;
     width: 100%;
     /* border: 5px solid brown; */
+}
+.HLikeShareSub{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: blue; */
 }
 #rama{
 width: 100%;

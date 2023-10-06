@@ -1,0 +1,223 @@
+.NContainer{
+    width: 45vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+}
+.NContainer1{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    /* background-color: yellow; */
+flex-direction: column;
+}
+.NSElect{
+    height: 100%;
+    width: 95%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.Nselect1{
+    height: 45%;
+    width: 100%;
+    /* border: 1px solid hotpink; */
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 2%;
+
+}
+.NSearchIcon{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 30px; */
+    /* border: 1px solid green; */
+    /* background-color: #e9e7e3; */
+   
+}
+.NSearchIcon1{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+.NSettingsIcon{
+    height: 100%;
+    width: 5%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NISelect{
+    height: 45%;
+    width:100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 10%;
+}
+
+.NISElectH:hover{
+   
+    
+    background-color: #e9e7e3;
+
+}
+.NISElectH{
+    height: 100%;
+    width: 20%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid navy; */
+}
+.NISElectAll{
+    height: 100%;
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid navy; */
+    position: relative;
+    left: 10%;
+}
+.NISElectAll:hover{
+    
+    background-color: #e9e7e3;
+}
+#NTwitterlogo{
+    width: 100%;
+    height: 60%;
+}
+.NContainer2{
+    width: 100%;
+    height: 18%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: teal; */
+}
+.NNotification{
+    width: 100%;
+    height: 50%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+}
+.NImage{
+height: 100%;
+width: 5%;
+/* border: 1px solid blue; */
+display: flex;
+justify-content: center;
+align-items: center; 
+}
+.NNOTicationText{
+    height: 100%;
+    width: 90%;
+    /* border: 1px solid blue; */
+    display: flex;
+    align-items: center;
+
+    text-align: left;
+}
+ .NImageLock{
+    height: 100%;
+} 
+.NContainer3{
+    width: 100%;
+    height: 22%;
+
+    display: flex;
+    flex-direction: column;
+    /* background-color: gray; */
+    align-items: center;
+    justify-content: center;
+}
+.NTExtJSRICon{
+    height: 15%;
+    width: 90%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.NJaiSRiRam{
+    position: relative;
+    left: 4%
+}
+.NNotification2{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    /* border: 1px solid blueviolet; */
+}
+.NNotificMesssg{
+    height: 18%;
+    width: 7%;
+    /* border: 1px solid black; */
+    /* border-radius: 50%; */
+}
+.NCommentICon{
+    color: rgb(19, 187, 209);
+   
+}
+.NpostNoti{
+height: 90%;
+width: 80%;
+/* border: 1px solid burlywood; */
+display: flex;
+flex-direction: column;
+justify-content: center;
+justify-content: space-around;
+text-align: start;
+position: relative;
+left: 2%;
+}
+
+.NNoticationRamImage{
+height: 30%;
+width: 10%;
+/* border: 1px solid blue;   */
+/* border-radius: 50%;   */
+
+}
+
+#Nrama{
+    width:95% ;
+    height: 120%;
+    border-radius: 100%;
+}
+.NNoficRamText{
+height: 20%;
+width: 30%;
+font-size: large;
+font-weight: bold;
+/* border: 1px solid blueviolet;    */
+display: flex;
+gap: 5%;
+/* justify-content: space-between; */
+}
+.NPosted{
+    font-size: small;
+    color: #e9e7e3;
+    position: relative;
+    top: 15%;
+    
+}
+.NFAvICon{
+    color: red;
+}
